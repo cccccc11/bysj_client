@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:background="@color/white"
+    android:id="@+id/user_commodity_adapter_rl">
+
+    <TextView
+        android:id="@+id/user_communication_adapter_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="20sp"
+        android:textColor="@color/themeColor"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="标题"
+        />
+
+<!--    <View-->
+<!--        android:layout_below="@id/user_communication_adapter_title_tv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:background="@color/gray"/>-->
+
+    <TextView
+        android:id="@+id/user_communication_adapter_content_tv"
+        android:layout_below="@id/user_communication_adapter_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:maxLines="1"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="内容"
+        android:layout_marginBottom="5dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/user_communication_adapter_timeAndNum_ll"
+        android:layout_below="@id/user_communication_adapter_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        >
+
+        <TextView
+            android:id="@+id/user_communication_adapter_userName_tv"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="name"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/user_communication_adapter_date_tv"
+            android:layout_toLeftOf="@id/user_communication_adapter_number_tv"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="2020.05.03"
+            android:textColor="@color/black"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/user_communication_adapter_number_tv"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="150"
+            android:textColor="@color/black"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

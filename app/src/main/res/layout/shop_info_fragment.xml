@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:id="@+id/shop_info_head_iv"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@mipmap/head_default_orange"/>
+            <TextView
+                android:id="@+id/shop_info_title_name_tv"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cccj"
+                android:textColor="@color/themeColor"
+                android:textSize="30sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/id_orange" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="团长名"
+                    android:textSize="15sp"
+                    android:textColor="@color/themeColor" />
+                <TextView
+                    android:id="@+id/shop_info_id_tv"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="id"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/arrow_right_gray"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/username" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textSize="15sp"
+                    android:textColor="@color/themeColor" />
+                <TextView
+                    android:id="@+id/shop_info_name_tv"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="id"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <ImageView
+                    android:id="@+id/shop_info_name_iv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/arrow_right_orange"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/phone_orange" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机"
+                    android:textSize="15sp"
+                    android:textColor="@color/themeColor" />
+                <TextView
+                    android:id="@+id/shop_info_phone_tv"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="15185952174"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <ImageView
+                    android:id="@+id/shop_info_phone_iv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/arrow_right_orange"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/house_orange" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地址"
+                        android:textSize="15sp"
+                        android:textColor="@color/themeColor" />
+                    <TextView
+                        android:id="@+id/shop_info_address_tv"
+                        android:layout_weight="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="沿河土家族自治县"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        />
+                    <ImageView
+                        android:id="@+id/shop_info_address_iv"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/arrow_right_orange"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/shop_info_change_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="修改密码"
+                    android:textColor="@color/themeColor"
+                    android:gravity="center"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+<!--            <Button-->
+<!--                android:id="@+id/shop_info_exit"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_below="@id/register_yzm_rl"-->
+<!--                android:background="@drawable/button_cycle_selector"-->
+<!--                android:textSize="15sp"-->
+<!--                android:text="退出"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

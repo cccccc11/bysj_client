@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shop"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:background="@color/themeColor">
+        <TextView
+            android:id="@+id/shop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我的商铺"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:background="@color/themeColor"/>
+        <TextView
+            android:id="@+id/shop_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="退出"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:background="@color/themeColor"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:background="@color/gray">
+        <FrameLayout
+            android:id="@+id/shop_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/top_gray">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/shop_goods_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:paddingTop="6dp"
+                    android:drawableTop="@mipmap/goods_checked"
+                    android:layout_weight="1"
+                    android:textColor="@color/themeColor"
+
+                    android:layout_marginBottom="1dp"
+                    />
+                <!--                    android:background="@drawable/shop_radio_selector"-->
+                <RadioButton
+                    android:id="@+id/shop_shop_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:drawableTop="@mipmap/shop_unchecked"
+                    android:layout_weight="1"
+
+                    android:textColor="@color/themeColor"
+                    android:layout_marginBottom="1dp"
+                    />
+<!--                android:background="@drawable/shop_radio_selector"-->
+            </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

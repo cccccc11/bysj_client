@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="选择日期"
+            android:textSize="20sp"
+            android:textColor="@color/themeColor"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/date_picker_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/themeColor"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginBottom="15dp"/>
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:calendarTextColor="@color/themeColor"
+        android:theme="@style/AppTheme"
+        />
+
+
+
+
+</LinearLayout>

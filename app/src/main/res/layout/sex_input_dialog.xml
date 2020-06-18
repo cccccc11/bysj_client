@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择您的性别:"
+        android:textSize="20sp"
+        android:textColor="@color/themeColor"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sex_dialog_female_rb"
+                android:layout_margin="15dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:background="@drawable/sex_uncheck"
+                android:textSize="25sp"
+                android:textColor="@color/themeColor"
+                android:button="@null"
+                />
+            <RadioButton
+                android:padding="5dp"
+                android:background="@drawable/sex_uncheck"
+                android:id="@+id/sex_dialog_male_rb"
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textSize="25sp"
+                android:textColor="@color/themeColor"
+                android:button="@null"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sex_dialog_commit_btn"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="确认"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/button_cycle_selector"/>
+</LinearLayout>

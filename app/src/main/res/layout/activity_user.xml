@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp">-->
+<!--        <TextView-->
+<!--            android:id="@+id/user_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="社区团购"-->
+<!--            android:textSize="25sp"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:background="@color/themeColor"/>-->
+<!--    </RelativeLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:background="@color/gray">
+        <FrameLayout
+            android:id="@+id/user_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/top_gray">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/user_commodity_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableTop="@mipmap/commodity_checked"
+                android:layout_weight="1"
+                android:textColor="@color/themeColor"
+
+                android:layout_marginBottom="1dp"
+                />
+            <RadioButton
+                android:id="@+id/user_shopping_cart_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:drawableTop="@mipmap/shopping_cart_unchecked"
+                android:layout_weight="1"
+
+                android:textColor="@color/themeColor"
+                android:layout_marginBottom="1dp"
+                />
+            <RadioButton
+                android:layout_marginTop="5dp"
+                android:id="@+id/user_order_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:drawableTop="@mipmap/order_unchecked"
+                android:layout_weight="1"
+                android:textColor="@color/themeColor"
+                />
+            <RadioButton
+                android:id="@+id/user_user_info_rb"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:drawableTop="@mipmap/shop_unchecked"
+                android:layout_weight="1"
+
+                android:textColor="@color/themeColor"
+                android:layout_marginBottom="1dp"
+                />
+            <RadioButton
+                android:id="@+id/user_communication_rb"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:drawableTop="@mipmap/communication_unchecked"
+                android:layout_weight="1"
+
+                android:textColor="@color/themeColor"
+                android:layout_marginBottom="1dp"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

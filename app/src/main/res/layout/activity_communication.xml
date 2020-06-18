@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunicationActivity"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/themeColor">
+
+        <ImageView
+            android:id="@+id/communication_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/arrow_left_white"/>
+
+        <TextView
+            android:id="@+id/communication_title_tv"
+            android:layout_toRightOf="@id/communication_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="标题"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:background="@color/themeColor"/>
+        <TextView
+            android:id="@+id/communication_reply_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="回复"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/communication_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

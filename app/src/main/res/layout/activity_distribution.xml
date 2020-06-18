@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".ActivityDistribution"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/themeColor">
+        <ImageView
+            android:id="@+id/distribution_commodity_exit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="6dp"
+            android:background="@mipmap/arrow_left_white"/>
+        <TextView
+            android:layout_toRightOf="@id/distribution_commodity_exit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:text="订单配送"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:background="@color/themeColor"/>
+
+        <TextView
+            android:id="@+id/distribution_commodity_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="完成配送"
+            android:layout_marginRight="15dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="2dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/distribution_head_iv"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/distribution_head_iv"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:id="@+id/distribution_commodity_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/themeColor"
+                    android:textSize="30sp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="数量:"
+                    android:textSize="20sp"
+                    android:textColor="@color/themeColor">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/distribution_commodity_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:textColor="@color/themeColor" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="1dp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:text="姓名"
+                android:textColor="@color/themeColor"
+                android:gravity="center"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:text="手机号码"
+                android:textColor="@color/themeColor"
+                android:gravity="center"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="地址"
+                android:textColor="@color/themeColor"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:text="数量"
+                android:textColor="@color/themeColor"
+                android:gravity="center"
+                android:background="@color/white"/>
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:text="状态"
+                android:textColor="@color/themeColor"
+                android:gravity="center"
+                android:background="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/distribution_commodity_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

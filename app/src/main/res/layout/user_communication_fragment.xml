@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:background="@color/gray">
+
+        <RelativeLayout
+            android:id="@+id/user_commodity_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/themeColor">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:text="交流"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:background="@color/themeColor"/>
+        </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/user_commodity_title"
+        android:id="@+id/user_communication_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/user_communication_add_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/shop_add"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        />
+</RelativeLayout>
